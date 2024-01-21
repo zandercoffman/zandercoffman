@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.duo-letters {
+    margin: 0 5vh 0 0;
+}
+
+.letters-container {
+    display: inline;
+    font-size: 100px;
+}
+
+#letter4 {
+    transform: translateX(50px);
+}
+
+.introduction {
+    text-align: center !important;
+    opacity: 0;
+    font-size: large;
+    margin-left: 5px;
+}
+
+.duo-letters {
+    font-size: 130px;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+}
