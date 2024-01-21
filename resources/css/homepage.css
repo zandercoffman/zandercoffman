@@ -11,6 +11,14 @@
     margin: 0 5vh 0 0;
 }
 
+.duo-letters:nth-child(1) {
+    font-size: 100px;
+}
+
+.duo-letters:nth-child(2) {
+    font-size: 150px;
+}
+
 .letters-container {
     display: inline;
     font-size: 100px;
@@ -25,10 +33,6 @@
     opacity: 0;
     font-size: large;
     margin-left: 5px;
-}
-
-.duo-letters {
-    font-size: 130px;
 }
 
 .fadeIn {
