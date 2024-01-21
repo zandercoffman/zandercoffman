@@ -4,12 +4,12 @@ html {
 }
 
 header {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10vh;
     display: flexbox;
 }
 
-header svg {
+svg {
     max-width: 35px;
     max-height: 35px;
 }
@@ -37,4 +37,25 @@ button {
 
 .main-content {
     margin: 0 20px 0 20px;
+}
+
+section {
+    margin: 0 0 20vh 0;  
+}
+
+.arrow {
+    transform: translateY(-30px);
+    margin: 1px 1px 10px 25px;
+    z-index: 100;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(192, 123, 102);
+    border-radius: 10px;
+}
+
+.arrow-container {
+    margin: 0 10px 1px 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
