@@ -1,7 +1,0 @@
-function moveUp() {
-
-}
-
-function moveDown() {
-    
-}

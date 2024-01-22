@@ -44,18 +44,12 @@ section {
 }
 
 .arrow {
-    transform: translateY(-30px);
-    margin: 1px 1px 10px 25px;
-    z-index: 100;
+    display: inline-block;
+    text-align: center;
     padding: 5px;
-    cursor: pointer;
-    background-color: rgb(192, 123, 102);
-    border-radius: 10px;
 }
 
-.arrow-container {
-    margin: 0 10px 1px 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.arrow img {
+    width: 100%;
+    height: auto;
 }
