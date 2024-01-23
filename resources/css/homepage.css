@@ -41,10 +41,12 @@
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-section:nth-child(1) {
-
+section[data-curShow="1"] {
+    display: inherit;
+    visibility: visible;
 }
 
-section:nth-child(2) {
+section[data-curShow="0"] {
     display: none;
+    visibility: hidden;
 }
