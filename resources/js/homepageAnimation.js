@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
   
-        await getDelay(Math.floor(Math.random() * 300) + 150);
+        await getDelay((Math.floor(Math.random() * 300) + 150) / 2);
         oSpan.textContent = oSpan.textContent + "O";
         commitOAnimation();
     }
