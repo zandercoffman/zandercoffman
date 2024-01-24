@@ -42,7 +42,7 @@
 }
 
 .container {
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -72,14 +72,10 @@
 
 section[data-curShow="1"] {
     display: block;
-    opacity: 1;
-    visibility: visible;
 }
 
 section[data-curShow="0"] {
     display: none;
-    opacity: 0;
-    visibility: hidden;
 }
 
 section[data-curAnimation="up"] {
