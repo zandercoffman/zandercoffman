@@ -6,26 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const setAnimation = (index, direction) => {
         console.log("Ran setAnimation() - " + index + " " + direction)
         for (let i = 1; i <= 3; i++) {
-            if (i === index) {
+            if (i == index) {
+                console.log(`${i} === ${index}`)
                 document.getElementById("section-" + i.toString()).setAttribute("data-curAnimation", direction.toString());
+            } else {
+                document.getElementById("section-" + i.toString()).setAttribute("data-curAnimation", "none");
             }
         }
     }
 
+    //this function is NASTY yuck 🙅‍♂️
     function getCurrentShowedHTMLSection() {
         for (let i = 1; i <= 3; i++) {
-            const sectionElement = document.getElementById("section-" + i.toString());
-            console.log(`Section ${i} - data-curShow: ${sectionElement.getAttribute("data-curShow")}`);
+            let elementName = ("section-" + i.toString()).toString();
+            console.log(`elementName = ${elementName} - ${typeof elementName === "string"} ~ Section ${i} - data-curShow: ${document.getElementById(elementName).getAttribute("data-curShow")}`);
             
-            if (sectionElement.getAttribute("data-curShow") === "1") {
+            if (document.getElementById(elementName).getAttribute("data-curShow") == "1") {
                 return i;
             }
         }
+        console.log(`getCurrentShowedHTMLSection() returned -1`)
         return -1;
     }
 
     function setPropertyToChosenHTMLSections(gottenIndex) {
-        console.log("Ran setPropertyToChosenHTMLSections()")
+        console.log(`Ran setPropertyToChosenHTMLSections() - ${gottenIndex}`)
         for (let i = 1; i <= 3; i++) {
             if (i == gottenIndex) {
                 document.getElementById("section-" + i.toString()).setAttribute("data-curShow", "1");
