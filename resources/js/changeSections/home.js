@@ -2,59 +2,66 @@ var initY;
 var section1, section2, section3, sect;
 
 document.addEventListener('DOMContentLoaded', function() {
-    section1 = document.getElementById("section-1");
-    section2 = document.getElementById("section-2");
-    section3 = document.getElementById("section-3");
-    sect = [section1, section2, section3]; 
+
+    const setAnimation = (index, direction) => {
+        console.log("Ran setAnimation() - " + index + " " + direction)
+        for (let i = 1; i <= 3; i++) {
+            if (i === index) {
+                document.getElementById("section-" + i.toString()).setAttribute("data-curAnimation", direction.toString());
+            }
+        }
+    }
 
     function getCurrentShowedHTMLSection() {
-        let index = 0;
-        sect.forEach((section) => {
-            if (section.getAttribute("data-curShow") === "1") {
-                return index;
+        for (let i = 1; i <= 3; i++) {
+            const sectionElement = document.getElementById("section-" + i.toString());
+            console.log(`Section ${i} - data-curShow: ${sectionElement.getAttribute("data-curShow")}`);
+            
+            if (sectionElement.getAttribute("data-curShow") === "1") {
+                return i;
             }
-            index++;
-        });
+        }
+        return -1;
     }
 
     function setPropertyToChosenHTMLSections(gottenIndex) {
-        let trav = 1;
-        sect.forEach((section, index) => {
-            if (gottenIndex != index) {
-                document.getElementById("section-" + trav.toString()).setAttribute("data-curShow", "0");
+        console.log("Ran setPropertyToChosenHTMLSections()")
+        for (let i = 1; i <= 3; i++) {
+            if (i == gottenIndex) {
+                document.getElementById("section-" + i.toString()).setAttribute("data-curShow", "1");
+                console.log(document.getElementById("section-" + i.toString()) + " is updated to " + document.getElementById("section-" + i.toString()).getAttribute("data-curShow") )
             } else {
-                document.getElementById("section-" + trav.toString()).setAttribute("data-curShow", "1");
-                return;
+                document.getElementById("section-" + i.toString()).setAttribute("data-curShow", "0");
             }
-            trav++;
-        });
-        return;
+        }
     }
 
     document.addEventListener('click', (event) => {
-        if (initY === undefined) {
-            initY = event.clientY;
-            return;
-        }
+        const halfOfScreen = window.innerHeight / 2;
 
-        if (initY === event.clientY)
-            return;
-
-        if (event.clientY < initY) {
+        if (event.clientY < halfOfScreen) {
             moveUp();
-        } else if (event.clientY > initY) {
+        } else if (event.clientY > halfOfScreen) {
             moveDown();
         }
-
-        initY = event.clientY;
     })
 
     function moveUp() {
+        console.log("Ran moveUp() function")
+        let curShown = getCurrentShowedHTMLSection();
+        if (curShown === 1) { return; }
 
+        setPropertyToChosenHTMLSections(curShown + 1);
+        setAnimation(curShown + 1, "up");
     } 
 
     function moveDown() {
-        
+        console.log("Ran moveDown() function")
+        let curShown = getCurrentShowedHTMLSection();
+        if (curShown === 3) { return; }
+
+        setPropertyToChosenHTMLSections(curShown - 1);
+        setAnimation(curShown - 1, "down");
     }
 
 })

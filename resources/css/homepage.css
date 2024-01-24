@@ -41,12 +41,55 @@
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+.container {
+    text-align: center;
+}
+
+
+@keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Your existing CSS */
+
 section[data-curShow="1"] {
-    display: inherit;
+    display: block;
+    opacity: 1;
     visibility: visible;
 }
 
 section[data-curShow="0"] {
     display: none;
+    opacity: 0;
     visibility: hidden;
+}
+
+section[data-curAnimation="up"] {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+section[data-curAnimation="down"] {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInFromBottom 0.5s ease forwards;
 }
