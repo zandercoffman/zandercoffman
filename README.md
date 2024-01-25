@@ -10,3 +10,7 @@
  * Coding
 * Playing Games
 <br>
+## **Achivements**
+> * Placed #1 for Top Regional Events for FBLA of Arizona for Website Coding and Development
+<br>
+> * Placed #1 for a local Hackathon out of multiple teams.
