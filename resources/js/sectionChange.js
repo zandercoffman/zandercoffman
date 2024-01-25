@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function moveUp() {
         console.log("Ran moveUp() function")
         let curShown = getCurrentShowedHTMLSection();
-        if (curShown === sections.length + 1) { return -1; }
+        if (curShown === sections.length ) { return -1; }
 
         setPropertyToChosenHTMLSections(curShown + 1);
         setAnimation(curShown + 1, "up");
@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', (event) => {
         const halfOfScreen = window.innerHeight / 2;
         
-        if (event.clientY < halfOfScreen - 200) {
+        if (event.clientY < halfOfScreen - (.2 * halfOfScreen)) {
             moveDown();
-        } else if (event.clientY > halfOfScreen + 200) {
+        } else if (event.clientY > halfOfScreen + (.2 * halfOfScreen)) {
             moveUp();
         }
     })
