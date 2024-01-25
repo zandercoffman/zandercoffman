@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Ran setAnimation() - " + indexOfSection + " " + direction);
         sections.forEach( (section, index) => {
             if (indexOfSection === index) {
+                sections[Math.max(0, indexOfSection - 1)].setAttribute("data-curAnimation", `${direction}-fadeOut`.toString());
+                setTimeout(() => {}, 1250);
                 section.setAttribute("data-curAnimation", direction.toString());
             }
         })
@@ -34,16 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    document.addEventListener('click', (event) => {
-        const halfOfScreen = window.innerHeight / 2;
-        
-        if (event.clientY < halfOfScreen - 200) {
-            moveDown();
-        } else if (event.clientY > halfOfScreen + 200) {
-            moveUp();
-        }
-    })
-
     function moveUp() {
         console.log("Ran moveUp() function")
         let curShown = getCurrentShowedHTMLSection();
@@ -61,5 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
         setPropertyToChosenHTMLSections(curShown - 1);
         setAnimation(curShown - 1, "down");
     }
+
+    document.addEventListener('click', (event) => {
+        const halfOfScreen = window.innerHeight / 2;
+        
+        if (event.clientY < halfOfScreen - 200) {
+            moveDown();
+        } else if (event.clientY > halfOfScreen + 200) {
+            moveUp();
+        }
+    })
 
 })

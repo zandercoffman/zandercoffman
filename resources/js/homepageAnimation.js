@@ -5,18 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
   
-    async function commitOAnimation() {
+    async function commitOAnimation(tick) {
         if (oSpan.textContent.length * 80 >= (window.innerWidth - 11) - 80) {
             document.documentElement.style.setProperty('--intro-visible', 'visible');
             document.querySelector('.introduction').classList.add('fadeIn');
             return;
         }
   
-        await getDelay((Math.floor(Math.random() * 200) + 150) / 2.35);
+        await getDelay(tick);
         oSpan.textContent = oSpan.textContent + "O";
-        commitOAnimation();
+        commitOAnimation(tick - 5.2);
     }
   
-    commitOAnimation();
+    commitOAnimation(200);
 });
   

@@ -4,19 +4,90 @@ html {
 }
 
 header {
-    padding-top: 5px;
-    padding-bottom: 10vh;
+    padding-top: 2px;
+    padding-bottom: 7vh;
+    margin-bottom: 10vh;
+    
     display: flexbox;
 }
 
+.container {
+    text-align: left;
+    
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes upFadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes downFadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  
+
+section {
+    transition: opacity 0.3s ease-in-out;
+  }
 svg {
     max-width: 35px;
     max-height: 35px;
 }
 
+.container {
+    position: absolute;
+}
+
 .header-item {
     float: left;
-    padding: 0 15px 0 15px;
+    padding: 10px;
     margin: 0 5px 0 5px;
     border-radius: 10px;
 }
@@ -56,4 +127,38 @@ section {
 
 .page-title {
     text-align: center;
+}
+
+section[data-curShow="1"] {
+    display: block;
+}
+
+section[data-curShow="0"] {
+    display: none;
+}
+
+section[data-curAnimation="up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+section[data-curAnimation="down"] {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromBottom 0.5s ease forwards;
+}
+
+section[data-curAnimation="up-fadeOut"] {
+    animation: upFadeOut 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+section[data-curAnimation="down-fadeOut"] {
+    animation: downFadeOut 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
 }
