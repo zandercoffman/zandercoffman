@@ -24,3 +24,15 @@
     font-size: large;
     margin-left: 5px;
 }
+
+.selecting-guide {
+    margin-left: 5px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(224, 200, 170);
+    position: absolute;
+    border-radius: 10vh;
+    border: 2px solid black;
+    -webkit-box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
+    box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
+}
