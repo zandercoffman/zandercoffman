@@ -7,10 +7,9 @@
 ## **My interests: ✨**
 * Mathematics (in *Honors*)
 * Solving problems
- * Coding
+* Coding
 * Playing Games
-<br>
 ## **Achivements**
-> * Placed #1 for Top Regional Events for FBLA of Arizona for Website Coding and Development
+> Placed #1 for Top Regional Events for FBLA of Arizona for Website Coding and Development
 ***
-> * Placed #1 for a local Hackathon out of multiple teams.
+> Placed #1 for a local Hackathon out of multiple teams.
