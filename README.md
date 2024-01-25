@@ -1,6 +1,6 @@
 # Zander Coffman
 
-> <h1>Find my website here: <a href="https://zandercoffman.github.io/zandercoffman/">My Website</a>
+>  <a href="https://zandercoffman.github.io/zandercoffman/">My Website</a>
 ### <tab>All of my socials are linked here ^
 ## **About Me 🌿**
 > I am a Honors Student (and *AP*!) programmer who specializes in developing web applications, and Java and Python programs. <br>
