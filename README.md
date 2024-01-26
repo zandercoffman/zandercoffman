@@ -17,6 +17,6 @@ I enjoy mathematics and solving computer problems by using code. I am also
 ## 🐍 Follow me
 <a href="https://open.spotify.com/user/6n889og5vo7wyzeixsgq9yl8s?si=260377b4e1714632">![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)</a>
 ## Achivements
-> 🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).
-<br>
-> 🏆 - Won ***1st*** at a local Hackathon provided by my school.
+🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).
+
+🏆 - Won ***1st*** at a local Hackathon provided by my school.
