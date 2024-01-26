@@ -37,3 +37,17 @@
     box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
     
 }
+
+.selection {
+    margin: 10vh 0 0 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 20vh 0 20px;
+    flex: 1;
+}
+
+.selection-parent {
+    display: flex;
+    overflow:hidden;
+    float: left;
+}
