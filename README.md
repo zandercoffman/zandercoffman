@@ -1,7 +1,7 @@
 # Hello, I'm Zander. 😄
 ## 🫂 About
 I am a Honors Student (and *AP*!) programmer who specializes in developing web applications, and Java and Python programs. <br>
-I enjoy mathematics and solving computer problems by using code. I am also
+I enjoy mathematics and solving computer problems by using code.
 ## 💻 Languages & Tools I Use
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -18,5 +18,4 @@ I enjoy mathematics and solving computer problems by using code. I am also
 <a href="https://open.spotify.com/user/6n889og5vo7wyzeixsgq9yl8s?si=260377b4e1714632">![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)</a>
 ## Achivements
 🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).
-
 🏆 - Won ***1st*** at a local Hackathon provided by my school.
