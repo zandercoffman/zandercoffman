@@ -35,7 +35,16 @@
     -webkit-box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
     -moz-box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
     box-shadow: 4px 10px 39px -4px rgba(0,0,0,0.5);
-    
+}
+
+.selection-parent {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    overflow: visible; /* Change overflow property to visible */
 }
 
 .selection {
@@ -44,10 +53,12 @@
     border-radius: 10px;
     padding: 0 20vh 0 20px;
     flex: 1;
+    width: 200px;
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
 }
 
-.selection-parent {
-    display: flex;
-    overflow:hidden;
-    float: left;
+.selection:nth-child(odd) {
+    transform: translateX(-150px);
 }

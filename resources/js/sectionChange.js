@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function moveUp() {
         console.log("Ran moveUp() function")
         let curShown = getCurrentShowedHTMLSection();
-        if (curShown === sections.length ) { return -1; }
+        if (curShown === sections.length - 1 ) { return -1; }
 
         setPropertyToChosenHTMLSections(curShown + 1);
         setAnimation(curShown + 1, "up");
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function moveDown() {
         console.log("Ran moveDown() function")
         let curShown = getCurrentShowedHTMLSection();
-        if (curShown ===  sections.length + 1) { return -1; }
+        if (curShown === 0) { return -1; }
 
         setPropertyToChosenHTMLSections(curShown - 1);
         setAnimation(curShown - 1, "down");
