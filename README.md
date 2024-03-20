@@ -20,3 +20,5 @@ I enjoy mathematics and solving computer problems by using code.
 🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).
 
 🏆 - Won ***1st*** at a local Hackathon provided by my school.
+
+🏆 - IT Specialist in Java - https://www.credly.com/badges/aa15effd-3d7e-4ea8-a109-0c410424489e/public_url
