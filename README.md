@@ -1,6 +1,6 @@
 # Hello, I'm Zander. 😄
 ## 🫂 About
-I am a Honors Student (and *AP*!) programmer who specializes in developing web applications, and Java and Python programs. <br>
+I am an Honors Student (and *AP*!) programmer specializing in developing web applications, and Java and Python programs. <br>
 I enjoy mathematics and solving computer problems by using code.
 ## 💻 Languages & Tools I Use
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
@@ -17,8 +17,12 @@ I enjoy mathematics and solving computer problems by using code.
 ## 🐍 Follow me
 <a href="https://open.spotify.com/user/6n889og5vo7wyzeixsgq9yl8s?si=260377b4e1714632">![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)</a>
 ## Achivements
-🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).
-
-🏆 - Won ***1st*** at a local Hackathon provided by my school.
-
-🏆 - IT Specialist in Java - https://www.credly.com/badges/aa15effd-3d7e-4ea8-a109-0c410424489e/public_url
+<ul>
+  <li>🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).</li>
+  <li>🏆 - Won ***6th*** at the 2023-2024 Arizona FBLA State Conference (Website Coding and Design).</li>
+  <li>🏆 - Won ***1st*** at a local Hackathon provided by my school. (2022 - 2023)</li>
+</ul>
+## Certifications
+<ul>
+  <li>🏆 - IT Specialist in Java - https://www.credly.com/badges/aa15effd-3d7e-4ea8-a109-0c410424489e/public_url</li>
+</ul>
