@@ -16,12 +16,14 @@ I enjoy mathematics and solving computer problems by using code.
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ## 🐍 Follow me
 <a href="https://open.spotify.com/user/6n889og5vo7wyzeixsgq9yl8s?si=260377b4e1714632">![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)</a>
-## Achivements
+## Achievements
 <ul>
-  <li>🏆 - Won ***1st*** at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).</li>
-  <li>🏆 - Won ***6th*** at the 2023-2024 Arizona FBLA State Conference (Website Coding and Design).</li>
-  <li>🏆 - Won ***1st*** at a local Hackathon provided by my school. (2022 - 2023)</li>
+  <li>🏆 - Won <em>1st</em> at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).</li>
+  <li>🏆 - Won <em>6th</em> at the 2023-2024 Arizona FBLA State Conference (Website Coding and Design).</li>
+  <li>🏆 - Won <em>3rd</em> at the 2023-2024 Arizona FBLA State Conference (Management Information Systems).</li>
+  <li>🏆 - Won <em>1st</em> at a local Hackathon provided by my school. (2022 - 2023)</li>
 </ul>
+
 ## Certifications
 <ul>
   <li>🏆 - IT Specialist in Java - https://www.credly.com/badges/aa15effd-3d7e-4ea8-a109-0c410424489e/public_url</li>
