@@ -19,7 +19,7 @@ I enjoy mathematics and solving computer problems by using code.
 ## Achievements
 <ul>
   <li>🏆 - Won <em>1st</em> at the 2023-2024 Arizona FBLA Regionals (Website Coding and Design).</li>
-  <li>🏆 - Won <em>6th</em> at the 2023-2024 Arizona FBLA State Conference (Website Coding and Design).</li>
+  <li>🏆 - Won <em>6th</em> at the 2023-2024 Arizona FBLA State Conference (Website Coding and Development).</li>
   <li>🏆 - Won <em>3rd</em> at the 2023-2024 Arizona FBLA State Conference (Management Information Systems).</li>
   <li>🏆 - Won <em>1st</em> at a local Hackathon provided by my school. (2022 - 2023)</li>
 </ul>
