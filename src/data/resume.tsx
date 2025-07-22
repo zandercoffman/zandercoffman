@@ -178,12 +178,12 @@ export const DATA = {
       mlh: "",
       links: [
         {
-          type: "Host",
+          title: "Host",
           href: "https://vulcanussystems.com",
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Github Repo",
+          title: "Github Repo",
           href: "https://github.com/zandercoffman/pokedex-hackathon",
           icon: <Icons.github className="size-3" />,
         }
