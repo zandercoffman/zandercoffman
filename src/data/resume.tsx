@@ -166,5 +166,51 @@ export const DATA = {
     },
         
   ],
-  hackathons: [],
+  hackathons: [
+    {
+      title: ".hack//cation #01",
+      dates: "May 24th, 2025",
+      location: "HeatSync Labs, Mesa, Arizona",
+      description:
+        "Joined a one-day in-person hackathon focused on exploring unfamiliar stacks and tech. I built a project from scratch based on the Pokédex theme using tools outside my usual workflow. Took the opportunity to dive into new frameworks, network with local devs, and submit a working demo to the judges by deadline.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hackcation.png",
+      mlh: "",
+      links: [
+        {
+          type: "Host",
+          href: "https://vulcanussystems.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Github Repo",
+          href: "https://github.com/zandercoffman/pokedex-hackathon",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+    },
+    {
+      title: "Tempe Union Hackathon 2023",
+      dates: "March 2023",
+      location: "Tempe Union High School District",
+      description:
+        "Won 1st Place in the Intermediate Division at the annual district-wide hackathon. Worked in a team to design and present a working solution under time constraints. Gained hands-on experience pitching ideas, problem-solving, and building with peers.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/tempe-hackathon-2023.png",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "Tempe Union Hackathon 2024",
+      dates: "March 2024",
+      location: "Tempe Union High School District",
+      description:
+        "Received Honorable Mention for a creative solution at the 2024 district hackathon. Continued building on previous experience, refining both technical and presentation skills in a fast-paced, collaborative environment.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/tempe-hackathon-2024.png",
+      mlh: "",
+      links: [],
+    },
+    
+  ],
 } as const;
