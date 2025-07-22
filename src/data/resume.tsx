@@ -65,7 +65,33 @@ export const DATA = {
       },
     },
   },
-  work: [],
+  work: [
+    {
+      company: "Camera Inventory System",
+      href: "",
+      badges: ["Co-owned"],
+      location: "Phoenix, AZ",
+      title: "Inventory System Manager",
+      logoUrl: "/camera.png",
+      start: "Mar 2024",
+      end: "Present",
+      description:
+        "I co-manage and develop a custom-built inventory management system for tracking and organizing high school camera equipment. I’m responsible for the full stack: building the app, handling updates, and collaborating with a co-owner to maintain system integrity and performance.",
+    },
+    {
+      company: "Desert Vista CS Club",
+      href: "",
+      badges: ["Student-led"],
+      location: "Phoenix, AZ",
+      title: "Club Secretary",
+      logoUrl: "/dvcs.png",
+      start: "May 2025",
+      end: "Present",
+      description:
+        "Serving as the 2025–2026 secretary of the Desert Vista Computer Science Club. I organize meetings, take notes, and help lead initiatives that promote programming, AI, and software development among high school students. Working with leadership to grow community and technical engagement.",
+    },
+        
+  ],
   education: [
     /*{
       school: "Arizona State University (via Starbucks College Achievement Plan)",
