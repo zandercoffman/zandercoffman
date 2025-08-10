@@ -1,3 +1,4 @@
+import CalendarBookTime from "@/components/bookingAva";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -74,6 +75,55 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <section id="activites">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Activites</h2>
+          </BlurFade>
+          {DATA.activites.map((work, id) => (
+            <BlurFade
+              key={work.company}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+            >
+              <ResumeCard
+                key={work.company}
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                href={work.href}
+                badges={work.badges}
+                period={`${work.start} - ${work.end ?? "Present"}`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="certificates">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xl font-bold">Certificates</h2>
+          </BlurFade>
+          {DATA.certificates.map((education, id) => (
+            <BlurFade
+              key={education.school}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
+              <ResumeCard
+                key={education.school}
+                href={education.href}
+                logoUrl={education.logoUrl}
+                altText={education.school}
+                title={education.school}
+                subtitle={education.degree}
+                period={`Issued in ${education.start}`}
+                isCert={education.location}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -92,6 +142,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
               />
             </BlurFade>
           ))}
@@ -152,7 +203,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="hackathons" className="hidden">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -206,16 +257,80 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
+                Want to chat? Just shoot me a DM at @asthehourspass on Discord
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+      {DATA.calendarBookingURL && <section id="GC">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-3">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Reserve a Time
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">
+                My Booking Avalability
+              </h2>
+              <CalendarBookTime url={DATA.calendarBookingURL} className="w-[90vw] md:h-[70vh] h-[100vh] " />
+            </div>
+          </BlurFade>
+        </div>
+      </section>}
+      <section id="club">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 mb-10">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-3">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Desert Vista Computer Science Club
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Fill out this interest form:
+              </h2>
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-4 text-center md:w-[60vw] md:max-h-[50vh]">
+                <div className="inline-block w-full md:w-[50vw] h-screen md:h-[60vh] rounded-lg text-background px-3 py-1 text-sm">
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: 0,
+                      paddingTop: "133.3333%",
+                      paddingBottom: 0,
+                      boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+                      marginTop: "1.6em",
+                      marginBottom: "0.9em",
+                      overflow: "hidden",
+                      borderRadius: "8px",
+                      willChange: "transform"
+                    }}
+                  >
+                    <iframe
+                      loading="lazy"
+                      style={{
+                        position: "absolute",
+                        width: "100%",
+                        height: "100%",
+                        top: 0,
+                        left: 0,
+                        border: "none",
+                        padding: 0,
+                        margin: 0
+                      }}
+                      src="https://www.canva.com/design/DAGt2gAzTA0/Ewfx_-DbBPo7Nvyui4WZHQ/view?embed"
+                      allowFullScreen
+                      allow="fullscreen"
+                    />
+                  </div>
+
+                  <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGt2gAzTA0&#x2F;Ewfx_-DbBPo7Nvyui4WZHQ&#x2F;view?utm_content=DAGt2gAzTA0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Computer Sci Club Flyer Poster</a> by Noah Yi
+                </div>
+                <div className="inline-block w-full md:w-[48vw] h-screen md:h-[58vh] rounded-lg text-background px-3 py-1 text-sm">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8Gyctz6tY176KQCTlrEQL6e_UFlbDdraeP0sxJXsWlyZOyw/viewform?usp=sharing&ouid=118205207829339732901" className="w-full h-[100%]"></iframe>
+                </div>
+              </div>
             </div>
           </BlurFade>
         </div>

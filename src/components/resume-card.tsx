@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -18,6 +19,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  isCert?: string
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,6 +30,7 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  isCert
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -84,7 +87,7 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && <div className="font-sans text-xs">{subtitle} {isCert && `issued by ${isCert}`}</div>}
           </CardHeader>
           {description && (
             <motion.div
@@ -98,9 +101,16 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm flex flex-col gap-2"
             >
-              {description}
+              <span>{description}</span>
+              {href && (
+                <Button asChild className="w-fit">
+                  <Link href={href}>
+                  {href.includes("https") ? href.substring(8) : href.substring(7) }
+                  </Link>
+                </Button>
+              )}
             </motion.div>
           )}
         </div>
