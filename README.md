@@ -1,47 +1,65 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Hi — I’m Zander 👋
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+**Aspiring software developer | Front-end & semi back-end | Faith-driven learner**  
+I build clean, practical web stuff and ship projects that actually help people. Constantly learning, shipping small wins, and leveling up one PR at a time.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+---
 
-# Features
+## About me
+I’m a dev based in Phoenix who loves React, TypeScript, and Java. I balance self-study, certifications, and real-world projects — currently focused on web development, backend systems, and exploring AI. I also draw sometimes and play games when I need to recharge.
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+---
 
-# Getting Started Locally
+## Skills & tech
+- **Frontend:** React, Next.js, TypeScript, TailwindCSS, shadcn/ui, Framer Motion  
+- **Backend / General:** Java (AP + certified), building APIs and backend features  
+- **Other:** Design basics (UI), rapid prototyping, project documentation, tutoring/mentoring  
+- **Working style:** small iterative PRs, thorough READMEs, and reusable components
 
-1. Clone this repository to your local machine:
+---
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## Current roles & experience
+- **Computer Science Intern — Tempe Union High School District** (Jul 2025 – Present)  
+  Building a camera inventory system and contributing to a flashcard system aimed at supporting student learning.  
+- **Club Secretary — Desert Vista Computer Science Club** (Jul 2025 – Present)  
+  Manage club communications, event agendas, and member coordination.  
+- **Peer Tutor — Desert Vista High School** (Aug 2024 – May 2026)  
+  One-on-one tutoring in CS topics; help peers with assignments and exam prep.
 
-2. Move to the cloned directory
+---
 
-   ```bash
-   cd portfolio
-   ```
+## Featured projects
+*(Pinned projects from my GitHub — quick highlights)*
 
-3. Install dependencies:
+- **JavaBrewed** — A learning tool to enhance CS education with diagrams and personalized support. (Open source)  
+- **quizmeteachme** — An AI-powered study app for interactive self-quizzing and teaching.  
+- **flashcardit** — A flashcard maker to streamline study sessions.  
+- **pokedex-hackathon** — Hackathon project exploring TypeScript + data handling.  
+- **Camera-Exercise-Tracker** — Forked AI exercise tracker that detects reps and form via camera.  
 
-   ```bash
-   pnpm install
-   ```
+> Check my repositories for live demos, README details, and code. I try to keep each project documented and easy to run locally.
 
-4. Start the local Server:
+---
 
-   ```bash
-   pnpm dev
-   ```
+## How to work with me
+- **Want to collaborate?** Open an issue or DM on GitHub. I respond best to clear issues with reproduction steps or a short use case.  
+- **PRs:** Small, focused PRs with tests or clear manual steps are ideal. I iterate fast and appreciate good commit messages.  
+- **Hiring / internships:** I’m open to internships and part-time dev work that helps me build real products and learn from experienced engineers.
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+---
 
-# License
+## Contact
+- Email: `zandercoffman34@gmail.com`  
+- Portfolio: https://zandercoffman.vercel.app  
+- GitHub: https://github.com/zandercoffman
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+---
+
+## Quick wins I care about
+- Clean UI and usable UX over flashy demos.  
+- Docs that make code approachable.  
+- Building tools that help learners and classmates succeed.
+
+---
+
+Thanks for stopping by — if you want this README snazzed up with badges, GitHub stats, or a custom project showcase section (screenshots + GIFs), I can add those next. 🚀
