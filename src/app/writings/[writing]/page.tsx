@@ -7,6 +7,7 @@ import { Type as type, type LucideIcon } from 'lucide-react';
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { Button } from "@/components/ui/button";
 import LoadingBar from "@/components/LoadingBar";
+import { Badge } from "@/components/ui/badge";
 
 interface PageProps {
     params: {
@@ -142,7 +143,7 @@ export default function WritingPage({ params }: PageProps) {
         <section className="relative">
             {selectedWriting.coverImage !== "" && <img src={selectedWriting.coverImage} className="w-full h-[200px] object-cover shadow-xl mb-4" alt="" />}
             <BlurFade delay={BLUR_FADE_DELAY}>
-                <h1 className="font-medium text-2xl mb-8 tracking-tighter">{selectedWriting.title}</h1>
+                <h1 className="font-medium text-2xl mb-8 tracking-tighter">{selectedWriting.title} <Badge>{selectedWriting.wordCount} word{selectedWriting.wordCount > 1 && "s"}</Badge></h1>
             </BlurFade>
             <BlurFade delay={BLUR_FADE_DELAY + 0.2}>
                 <p>{selectedWriting.summary}</p>

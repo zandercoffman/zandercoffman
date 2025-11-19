@@ -120,7 +120,6 @@ export const DATA = {
           page: 11,
           subsections: {
             "Introduction And Prediction": 11,
-            "Prediction": 11,
             "Experimental Designs": 11,
             "Materials Used And Purpose": 11,
             "Procedures": 11,
