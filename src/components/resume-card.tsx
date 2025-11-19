@@ -9,6 +9,13 @@ import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -19,8 +26,10 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
-  isCert?: string
+  isCert?: string;
+  skills?: string[];
 }
+
 export const ResumeCard = ({
   logoUrl,
   altText,
@@ -30,11 +39,14 @@ export const ResumeCard = ({
   badges,
   period,
   description,
-  isCert
+  isCert,
+  skills = []
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     if (description) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
@@ -61,7 +73,7 @@ export const ResumeCard = ({
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center gap-2 justify-center font-semibold leading-none text-xs sm:text-sm">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -87,27 +99,49 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle} {isCert && `issued by ${isCert}`}</div>}
+            {subtitle && (
+              <div className="font-sans text-xs">
+                {subtitle} {isCert && `issued by ${isCert}`}
+              </div>
+            )}
           </CardHeader>
+
           {description && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm flex flex-col gap-2"
+              className="mt-2 text-xs sm:text-sm flex flex-col gap-3"
             >
               <span>{description}</span>
+
+
+
+              {skills.length > 0 && (
+                <>
+                  <div className="text-xs tabular-nums text-muted-foreground text-left">
+                    Skills Learned
+                  </div>
+                  <div className="grid grid-cols-3 gap-2">
+                    {skills.map((skill, index) => (
+                      <Badge key={index} variant={"outline"}>{skill}</Badge>
+                    ))}
+                  </div>
+                </>
+              )}
+
               {href && (
                 <Button asChild className="w-fit">
                   <Link href={href}>
-                  {href.includes("https") ? href.substring(8) : href.substring(7) }
+                    {href.includes("https")
+                      ? href.substring(8)
+                      : href.substring(7)}
                   </Link>
                 </Button>
               )}

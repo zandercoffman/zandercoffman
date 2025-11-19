@@ -1,10 +1,10 @@
 import { Icons } from "@/components/icons";
-import { Calendar, Coffee, HomeIcon, NotebookIcon } from "lucide-react";
+import { BrainCircuit, Calendar, Coffee, HomeIcon, NotebookIcon, PenLine } from "lucide-react";
 
 export const DATA = {
   calendarBookingURL: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ROSU3TcMHx55Zy_cZhftIGpAKyTSrOXdfVMeMGdwkTinT41ukSDnM4bwOr00uf2Tntvv6RNSm?gv=true",
   name: "Zander Coffman",
-  initials: "DV",
+  initials: "ZC",
   url: "https://zandercoffman.vercel.app",
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
@@ -27,12 +27,118 @@ export const DATA = {
     "Java",
     "Web Development",
     "AP Computer Science A",
-    "JSON"
-  ],
+    "JSON",
+    "Cross-Functional Team Leadership",
+    "Agile Project Coordination",
+    "Strategic Problem Solving",
+    "Creative Process Optimization",
+    "Data-Driven Decision Making",
+    "Technical Mentorship",
+    "Innovation Facilitation",
+    "Client-Focused Communication",
+    "Product Lifecycle Oversight",
+    "Collaborative Brainstorming",
+    "Stakeholder Engagement",
+    "Adaptive Workflow Management"
+  ],  
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/book", icon: Calendar, label: "Book" }
+    { href: "/writings", icon: PenLine, label: "Papers Written" }
+  ],
+  writings: [
+    {
+      title: "The Future of Work: Adapting and Thriving in the 21st Century's Job Market",
+      summary: "This paper looks at how AI is changing the way we work and get hired, showing that while it can make jobs and applications more automated, people who learn to use AI smartly can stand out and succeed in today’s job market.",
+      extendedSummary: "",
+      dateStarted: "November 11th, 2025",
+      dateFinished: "",
+      category: "Research Paper",
+      wordCount: 1000,
+      coverImage: "",
+      link: "",
+      Icon: BrainCircuit,
+      badges: ["AI", "Workplace", "Research", "Economics"],
+      tableOfContents: {
+        "Abstract": {
+          page: 3,
+          subsections: {
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.": 0
+          }
+        },
+        "Background": {
+          page: 4,
+          subsections: {
+            "Introduction": 4,
+            "History Of AI In The Workplace": {
+              page: 4,
+              subsections: {
+                "Past": "1950s - 1999",
+                "Present": "2000s - 2025"
+              }
+            },
+
+          }
+        },
+        "The World Today": {
+          page: 5,
+          subsections: {
+            "What Are White Collar Jobs And How Are They Affected?": 5,
+            "What Is Happening To Jobs?": 6,
+            "What AI Influences And Controls During Hiring": 7,
+            "The Current State Of The Job Market": 8,
+            "Experience With No Experience": 8,
+            "Reliance On Self Taught Education": 11
+          }
+        },
+        "Job Searching": {
+          page: 11,
+          subsections: {
+            "How Has AI Influenced Getting Hired?": 11,
+            "How Potential Candidates Use AI": 11,
+            "How Recruiting Managers Use AI": 11,
+            "Using Social Media To Enhance Employability": 11
+          }
+        },
+        "Thesis": {
+          page: 11,
+          subsections: {
+            "The Problem": 11,
+          }
+        },
+        "Adapting To The 21st Century's Job Market": {
+          page: 11,
+          subsections: {
+            "Introduction And Prediction": 11,
+            "Experimental Designs": 11,
+            "Materials Used And Purpose": 11,
+            "Procedures": 11,
+            "Results": 11,
+            "Analysis": 11
+          }
+        },
+        "Thriving In The 21st Century's Job Market": {
+          page: 11,
+          subsections: {
+            "Introduction And Prediction": 11,
+            "Prediction": 11,
+            "Experimental Designs": 11,
+            "Materials Used And Purpose": 11,
+            "Procedures": 11,
+            "Results": 11,
+            "Analysis": 11
+          }
+        },
+        "Conclusion": {
+          page: 12,
+          subsections: {
+            "Key Points": 12,
+            "The Resolution": 12,
+            "Takeaways": 12
+          }
+        },
+        "References": 12
+      },
+    }
   ],
   contact: {
     email: "zandercoffman34@gmail.com",
@@ -67,8 +173,49 @@ export const DATA = {
       },
     },
   },
-
   work: [
+    {
+      company: "UIsy Design",
+      href: "https://uisy-design.netlify.app",
+      badges: [
+        "My Business"
+      ],
+      location: "Online",
+      title: "Owner & Entrepreneur",
+      logoUrl: "/UIsyLogo.jpeg",
+      start: "November 2025",
+      end: "Present",
+      skills: [
+        "UI/UX Design",
+        "Front-End Development",
+        "Design System Creation",
+        "Client Communication",
+        "Prototyping & Wireframing",
+        "Debugging and Pacing"
+      ],          
+      description:
+        "UIsy Design makes custom, intuitive, and fun user interfaces for businesses and anyone who needs a clean, polished look. On top of that, we offer a modular UI library so developers can build front-ends faster without sacrificing style. Basically, we want design to feel easy, enjoyable, and just work for everyone.",
+    },
+    {
+      company: "Code Ninjas",
+      href: "https://www.codeninjas.com",
+      badges: [],
+      location: "Hybrid",
+      title: "Code Sensei",
+      logoUrl: "/cn.png",
+      start: "September 2025",
+      end: "Present",
+      skills: [
+        "Teaching & Mentorship",
+        "Explaining Technical Concepts Clearly",
+        "Python Programming",
+        "Curriculum Development",
+        "Debugging & Problem-Solving",
+        "Classroom Management"
+      ],
+      description:
+        "As a Code Sensei at Code Ninjas, I teach and support students as they learn to code through hands-on, game-driven lessons. ",
+    },
     {
       company: "Desert Vista Computer Science Club",
       href: "https://dvcs.club",
@@ -78,6 +225,14 @@ export const DATA = {
       logoUrl: "/dvcs.png",
       start: "July 2025",
       end: "Present",
+      skills: [
+        "Organizational Management",
+        "Professional Communication",
+        "Team Collaboration",
+        "Scheduling & Coordination",
+        "Record Keeping & Documentation",
+        "Time Management"
+      ],         
       description:
         "Managed club communications, organized meeting agendas, and maintained detailed records of events and initiatives. Coordinated schedules, documented decisions, and ensured smooth collaboration between officers, members, and external partners. Assisted in planning activities, tracking action items, and supporting the club’s overall operations.",
     },
@@ -90,6 +245,14 @@ export const DATA = {
       logoUrl: "/tuhsd.jpg",
       start: "July 2025",
       end: "Present",
+      skills: [
+        "Problem-Solving in Real Environments",
+        "Full-Stack Development",
+        "Database Design & Management",
+        "API Integration",
+        "Project Management",
+        "Version Control (Git)"
+      ],       
       description:
         "Developing a comprehensive camera inventory system to streamline asset management district-wide, improving efficiency and accountability. Additionally, contributing to the design and development of an innovative flashcard system aimed at enhancing student learning, with potential for district-wide adoption. Collaborating closely with staff and stakeholders to deliver impactful technology solutions that support educational goals.",
     },
@@ -99,7 +262,7 @@ export const DATA = {
   activites: [
     {
       company: "Desert Vista High School",
-      href: "https://desertvista.tempeunion.org/",
+      href: "https://desertvista.tempeunion.org",
       badges: [],
       location: "In Person",
       title: "Peer Tutor",
@@ -115,7 +278,7 @@ export const DATA = {
       badges: [],
       location: "Hybrid",
       title: "Member",
-      logoUrl: "/dv.jpg",
+      logoUrl: "/dvcs.png",
       start: "August 2023",
       end: "May 2026",
       description:
@@ -144,19 +307,18 @@ export const DATA = {
       logoUrl: "/dv.jpg",
       start: "2022",
       end: "2026",
-      description: `Highlighted Classes Taken: AP Calculus AB, AP Calculus BC, AP Computer Science A, AP Spanish Language and Culture, College Composition (ENG101), Honors Biotechnology 2`
+      description: `Highlighted Classes Taken: AP Calculus AB, AP Calculus BC, AP English: Language and Composition, AP Computer Science A, AP Spanish: Language and Culture, College Composition (ENG101), Honors Biotechnology 2`
     },
     {
-      school: "AWS Skill Builder",
-      href: "https://skillbuilder.aws",
-      degree: "Cloud Computing & AWS Services Training",
+      school: "Massachusetts Institute of Technology",
+      href: "https://ocw.mit.edu",
+      degree: "Numerous Studies",
       location: "Online",
-      logoUrl: "/aws.jpg",
-      start: "2024",
+      logoUrl: "/mit.png",
+      start: "2025",
       end: "Present",
-      description: "Completed hands-on training in AWS cloud services, architecture, and deployment through interactive labs and guided courses. Course List: Machine Learning Terminology and Process"
+      description: "Highlighted Courses Currently Taken: 18.06: Linear Algebra, 6.005: Elements of Software Construction, 9.00: Introduction to Psychology, 15.390 — New Enterprises, 15.S21 — Nuts and Bolts of Business Plans, 15.351 — Managing Innovation and Entrepreneurship, 15.821 Listening to the Customer, 15.822 Strategic Marketing Measurement, 15.280 — Communication for Managers, 21G.232 — Advanced Speaking & Critical Listening Skills, 15‑279 — Management Communication (Strategic Interviewing)"
     },
-    
   ],
   certificates: [
     {
@@ -187,13 +349,13 @@ export const DATA = {
       end: "",
     },
     {
-      school: "OSHA Certificate - Healthcare",
+      school: "OSHA Certificate - 10 Hour Healthcare",
       href: "#",
       degree: "Certificate",
-      location: "CarrerSafe",
+      location: "CareerSafe",
       logoUrl: "/carsafe.png",
-      start: "to be determined in 2025",
-      end: "",
+      start: "08/01/2025",
+      end: "10/16/2025",
     },
     {
       school: "BACE (Biotechnology Aptitude & Competency Exam)",
