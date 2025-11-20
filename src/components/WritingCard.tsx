@@ -22,6 +22,13 @@ function getShortKey(str: string): string {
         .toLowerCase();
 }
 
+function truncateString(str: string, maxLength: number = 225) {
+    if (str.length <= maxLength) {
+      return str;
+    }
+    return str.slice(0, maxLength) + "...";
+  }
+
 interface WritingCardProps {
     title: string,
     summary: string,
@@ -59,7 +66,7 @@ export const WritingCard = ({
         <Card className="flex items-center gap-4 group cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
             {/* Icon */}
             <div className="flex items-center justify-center w-10 h-10 text-muted-foreground rounded-full border border-muted-foreground">
-                <Icon className="w-5 h-5" />
+                <Icon className="w-10 h-5" />
             </div>
 
             {/* Text Column */}
@@ -93,20 +100,13 @@ export const WritingCard = ({
                         }}
                         className="mt-2 text-xs sm:text-sm flex flex-col gap-2"
                     >
-                        <span>{summary}</span>
-                        {link && (
-                            <Button asChild className="w-fit">
-                                <Link href={link}>
-                                    {link.includes("https") ? link.substring(8) : link.substring(7)}
-                                </Link>
-                            </Button>
-                        )}
+                        <span>{truncateString(summary)}</span>
                         <span className="font-semibold flex flex-row gap-2">
                             <Calendar className="w-4 h-4" />
                             <span>{dateStarted} - {dateFinished === "" ? "Present" : dateFinished}</span>
                         </span>
                         <div className="flex flex-row gap-2">
-                            <Link href={`/writings/${getShortKey(title)}`}>
+                            <Link href={link}>
                                 <Button className="flex flex-row gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     <span>Access the Full Paper</span>

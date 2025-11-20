@@ -132,7 +132,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Featured Papers</h2>
           </BlurFade>
-          {DATA.writings.map((writing, id) => (
+          {DATA.writings.slice(0, 2).map((writing, id) => (
             <BlurFade
               key={id}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}

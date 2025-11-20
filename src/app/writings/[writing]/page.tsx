@@ -8,6 +8,7 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 import { Button } from "@/components/ui/button";
 import LoadingBar from "@/components/LoadingBar";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 interface PageProps {
     params: {
@@ -19,7 +20,7 @@ interface TOCEntry {
     page: number;
     subsections?: Record<string, TOCEntry | string | number>;
 }
-  
+
 interface TableOfContents {
     [key: string]: TOCEntry | number | string;
 }
@@ -61,7 +62,7 @@ export default function WritingPage({ params }: PageProps) {
     }, [writing, writings]);
 
     if (!selectedWriting) {
-        return <LoadingBar/>
+        return <LoadingBar />
     }
 
     const renderTOC = (
@@ -75,7 +76,7 @@ export default function WritingPage({ params }: PageProps) {
         if (typeof toc == "number") {
             return <></>
         }
-    
+
         // TOCEntry with page
         if ("page" in toc) {
             return (
@@ -84,18 +85,18 @@ export default function WritingPage({ params }: PageProps) {
                 </div>
             );
         }
-    
+
         // TableOfContents object
         return (
             <div className={`space-y-1 ${level > 0 ? 'ml-6 mt-1' : ''}`}>
                 {Object.entries(toc).map(([key, value], index) => {
                     // Check if value is a TOCEntry with a page number
-                    const pageNumber = typeof value === 'object' && value !== null && 'page' in value 
-                        ? value.page 
+                    const pageNumber = typeof value === 'object' && value !== null && 'page' in value
+                        ? value.page
                         : null;
-                    
+
                     const displayTitle = key;
-                    
+
                     return (
                         <div key={key} className="group">
                             <div className={`
@@ -111,11 +112,11 @@ export default function WritingPage({ params }: PageProps) {
                                 `}>
                                     {level === 0 ? '§' : level === 1 ? '›' : '·'}
                                 </span>
-                                
+
                                 <span className="flex-grow text-foreground group-hover:text-primary transition-colors">
                                     {displayTitle}
                                 </span>
-                                
+
                                 {pageNumber !== null && (
                                     <>
                                         <span className="flex-grow border-b border-dotted border-muted-foreground/30 mb-1" />
@@ -136,22 +137,58 @@ export default function WritingPage({ params }: PageProps) {
             </div>
         );
     };
-    
+
 
 
     return (
         <section className="relative">
-            {selectedWriting.coverImage !== "" && <img src={selectedWriting.coverImage} className="w-full h-[200px] object-cover shadow-xl mb-4" alt="" />}
+            {selectedWriting.coverImage !== "" && <img src={selectedWriting.coverImage} className="w-full h-[200px] object-cover shadow-xl rounded-lg" alt="" />}
             <BlurFade delay={BLUR_FADE_DELAY}>
-                <h1 className="font-medium text-2xl mb-8 tracking-tighter">{selectedWriting.title} <Badge>{selectedWriting.wordCount} word{selectedWriting.wordCount > 1 && "s"}</Badge></h1>
+                <h1 className="font-medium text-2xl mb-2 tracking-tighter mt-10">{selectedWriting.title}</h1>
             </BlurFade>
+            <div className="flex flex-row gap-2">
+                <BlurFade delay={BLUR_FADE_DELAY + 0.1}>
+                    <Badge >{selectedWriting.wordCount} word{selectedWriting.wordCount > 1 && "s"}</Badge>
+                </BlurFade>
+                <BlurFade delay={BLUR_FADE_DELAY + 0.1}>
+                    <Badge variant={"secondary"}>{selectedWriting.category}</Badge>
+                </BlurFade>
+            </div>
+            <div className="flex flex-row gap-2 mb-8">
+                {
+                    /** {
+                        selectedWriting.badges.map((badge, index) => {
+                            return <Badge variant={"outline"} className="text-xs" key={index}>{badge}</Badge>
+                        })
+                    } */
+                }
+            </div>
             <BlurFade delay={BLUR_FADE_DELAY + 0.2}>
-                <p>{selectedWriting.summary}</p>
+                <p>{selectedWriting.extendedSummary}</p>
             </BlurFade>
 
             <BlurFade delay={BLUR_FADE_DELAY + 0.4} className="sticky top-4 z-10 flex flex-row gap-4 w-full my-8">
-            <RainbowButton className=" rounded-full flex-1 h-14 text-lg font-semibold">View This Paper</RainbowButton>
-            <Button variant="outline" className="rounded-full flex-1 h-14 text-lg font-semibold">Do Something</Button>
+                <Link href={selectedWriting.link} className="w-1/2">
+                    <RainbowButton className=" rounded-full flex-1 h-14 w-full text-lg font-semibold">View This Paper</RainbowButton>
+                </Link>
+                <Button variant="outline" className=" w-1/2 rounded-full flex-1 h-14 text-lg font-semibold"
+                    onClick={() => {
+                        // Check if the browser supports the Web Share API
+                        if (navigator.share) {
+                            navigator.share({
+                                title: selectedWriting.title,
+                                text: selectedWriting.summary,
+                                url: selectedWriting.link
+                            })
+                                .then(() => console.log('Share successful!'))
+                                .catch((error) => console.log('Sharing failed:', error));
+                        } else {
+                            console.log('Web Share API not supported on this browser.');
+                        }
+
+                    }}>
+                    Share This Writing
+                </Button>
             </BlurFade>
 
             {selectedWriting.tableOfContents && (

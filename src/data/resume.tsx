@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { BrainCircuit, Calendar, Coffee, HomeIcon, NotebookIcon, PenLine } from "lucide-react";
+import { BrainCircuit, Calendar, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
 
 export const DATA = {
   calendarBookingURL: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ROSU3TcMHx55Zy_cZhftIGpAKyTSrOXdfVMeMGdwkTinT41ukSDnM4bwOr00uf2Tntvv6RNSm?gv=true",
@@ -136,6 +136,36 @@ export const DATA = {
           }
         },
         "References": 12
+      },
+    },
+    {
+      title: "How To Get Members Into A New Club (And Actually Keep Them There)",
+      summary: "This essay outlines a five-step “SMART” system to help new club leaders recruit members and build a strong club. It shows how using structure, outreach, and planning leads to long-term success. This essay is an essay I made for College Composition (ENG101) and earned a 98/105 (93%) for this writing.",
+      extendedSummary: "This essay explains how new or inexperienced club leaders can successfully recruit and retain members by using the five-step “SMART” process: Setting the Foundation, Marketing, Attracting Members, Reaching Out and Retaining, and Taking the Club to the Next Level. It argues that by following these structured steps—supported by research, real examples, and proven strategies—any student can build a thriving, long-lasting club. This essay is an essay I made for College Composition (ENG101) and earned a 98/105 (93%) for this writing.",
+      dateStarted: "August 25th, 2025",
+      dateFinished: "September 21st, 2025",
+      category: "Informational and Research Paper",
+      wordCount: 2824,
+      coverImage: "/writing/membersclub.png",
+      link: "https://zenodo.org/records/17652670?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjM4YjgwZjMyLTUyODItNDVhNS05ODRiLTc3Yzc1MDY1OGMyYyIsImRhdGEiOnt9LCJyYW5kb20iOiIwZjhkNDJiNzYyZDdhMDYwN2JhOThmZjAyNWZkY2ZkZiJ9.cJ-rh_SeLbQYupLDjSpTUNUHDAWCtpeXgwGzzt2_Nj9oBUXRStgJBMZqi8E1pW74xnZaMYZkez5gX1qH2U0F3g",
+      Icon: UsersRound,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: {
+        "Introduction/Overview": 1,
+        "Special Terms": 2,
+        "Sequence Of Steps": {
+          page: 2,
+          subsections: {
+            "'S' - Setting The Foundation": 2,
+            "'M' - Marketing": 3,
+            "'A' - Attracting Members": 5,
+            "'R' - Reaching Out and Retaining": 5,
+            "'T' - Taking the Club to the Next Level": 6
+          }          
+        },
+        "Examples/Results": 7,
+        "Conclusion": 9,
+        "Works Cited": 10
       },
     }
   ],
