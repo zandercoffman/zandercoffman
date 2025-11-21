@@ -1,5 +1,25 @@
 import { Icons } from "@/components/icons";
-import { BrainCircuit, Calendar, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
+import { BrainCircuit, Calendar, CaseSensitive, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
+
+/**
+ * Writing Template
+ * 
+ * {
+      title: "Title",
+      summary: "",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      type: "idea",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+    }
+ */
 
 export const DATA = {
   calendarBookingURL: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ROSU3TcMHx55Zy_cZhftIGpAKyTSrOXdfVMeMGdwkTinT41ukSDnM4bwOr00uf2Tntvv6RNSm?gv=true",
@@ -52,6 +72,7 @@ export const DATA = {
       extendedSummary: "",
       dateStarted: "November 11th, 2025",
       dateFinished: "",
+      type: "written",
       category: "Research Paper",
       wordCount: 1000,
       coverImage: "",
@@ -144,8 +165,9 @@ export const DATA = {
       extendedSummary: "This essay explains how new or inexperienced club leaders can successfully recruit and retain members by using the five-step “SMART” process: Setting the Foundation, Marketing, Attracting Members, Reaching Out and Retaining, and Taking the Club to the Next Level. It argues that by following these structured steps—supported by research, real examples, and proven strategies—any student can build a thriving, long-lasting club. This essay is an essay I made for College Composition (ENG101) and earned a 98/105 (93%) for this writing.",
       dateStarted: "August 25th, 2025",
       dateFinished: "September 21st, 2025",
-      category: "Informational and Research Paper",
+      category: "Process Analysis Paper",
       wordCount: 2824,
+      type: "written",
       coverImage: "/writing/membersclub.png",
       link: "https://zenodo.org/records/17652670?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjM4YjgwZjMyLTUyODItNDVhNS05ODRiLTc3Yzc1MDY1OGMyYyIsImRhdGEiOnt9LCJyYW5kb20iOiIwZjhkNDJiNzYyZDdhMDYwN2JhOThmZjAyNWZkY2ZkZiJ9.cJ-rh_SeLbQYupLDjSpTUNUHDAWCtpeXgwGzzt2_Nj9oBUXRStgJBMZqi8E1pW74xnZaMYZkez5gX1qH2U0F3g",
       Icon: UsersRound,
@@ -167,7 +189,127 @@ export const DATA = {
         "Conclusion": 9,
         "Works Cited": 10
       },
-    }
+    },
+    {
+      title: "Meta’s Smart Glasses: How a Simple Vision Turned Controversial",
+      summary: "This paper examines how Meta’s smart glasses, initially a simple technological vision, became controversial due to privacy concerns, design flaws, and public reception.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Analytical / Case Study Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "The Parables of Jesus Christ",
+      summary: "This paper explores the parables of Jesus Christ, analyzing their meanings, cultural context, and moral lessons for both historical and modern audiences.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Expository / Theological Analysis Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "The Cost of Discipleship in a Comfort-Driven Culture",
+      summary: "This paper examines how modern comfort-driven lifestyles challenge the commitment required for true discipleship, arguing that following Christ often demands sacrifice and intentionality.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Persuasive / Theological Reflection Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "How To Be A Man",
+      summary: "This paper explores the qualities, responsibilities, and cultural expectations associated with being a man, offering insights on character, integrity, and personal growth.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Expository / Social Commentary Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "If Such a God Is Loving, Why Do I Suffer?",
+      summary: "This paper explores the problem of suffering in the context of a loving God, examining why pain exists and how faith can provide understanding and comfort.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Reflective / Theological Inquiry Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "How To Land A Job Interview",
+      summary: "This paper provides strategies and actionable tips for securing a job interview, including resume optimization, networking, and effective application techniques.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Process Analysis Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "How To Succeed In A Job Interview",
+      summary: "This paper offers strategies for excelling in a job interview, covering preparation, communication skills, and techniques to leave a strong impression on employers.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Process Analysis Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
+    {
+      title: "How To Write A Quality Resume",
+      summary: "This paper synthesizes multiple sources and expert advice to explain how to craft a high-quality resume that effectively highlights skills, experience, and accomplishments.",
+      extendedSummary: "",
+      dateStarted: "",
+      dateFinished: "",
+      category: "Synthesis / How-To Guide Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: CaseSensitive,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "Idea"
+    },
   ],
   contact: {
     email: "zandercoffman34@gmail.com",

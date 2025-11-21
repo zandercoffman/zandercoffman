@@ -138,16 +138,16 @@ export default function Page() {
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
             >
               <WritingCard
-               title={writing.title} 
-               summary={writing.summary} 
-               dateStarted={writing.dateStarted} 
-               dateFinished={writing.dateFinished}
-                category={writing.category} 
-                wordCount={writing.wordCount} 
+                title={writing.title}
+                summary={writing.summary}
+                dateStarted={writing.dateStarted}
+                dateFinished={writing.dateFinished}
+                category={writing.category}
+                wordCount={writing.wordCount}
                 coverImage={writing.coverImage}
-                 link={writing.link} 
-                 Icon={writing.Icon} 
-                 badges={writing.badges}/>
+                link={writing.link}
+                Icon={writing.Icon}
+                badges={writing.badges} type={writing.type}/>
             </BlurFade>
           ))}
         </div>

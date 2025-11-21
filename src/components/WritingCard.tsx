@@ -24,10 +24,10 @@ function getShortKey(str: string): string {
 
 function truncateString(str: string, maxLength: number = 225) {
     if (str.length <= maxLength) {
-      return str;
+        return str;
     }
     return str.slice(0, maxLength) + "...";
-  }
+}
 
 interface WritingCardProps {
     title: string,
@@ -39,7 +39,8 @@ interface WritingCardProps {
     coverImage: string,
     link: string,
     Icon: LucideIcon,
-    badges: readonly string[]
+    badges: readonly string[],
+    type: string
 }
 export const WritingCard = ({
     title,
@@ -51,7 +52,8 @@ export const WritingCard = ({
     coverImage,
     link = "https://orcid.org/0009-0001-8312-6770",
     Icon,
-    badges
+    badges,
+    type
 }: WritingCardProps) => {
     const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -63,7 +65,7 @@ export const WritingCard = ({
     };
 
     return (
-        <Card className="flex items-center gap-4 group cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
+        <Card className={"flex items-center gap-4 group cursor-pointer " + (type == "Idea" ? "!text-gray-500" : "text-black")} onClick={() => setIsExpanded(!isExpanded)}>
             {/* Icon */}
             <div className="flex items-center justify-center w-10 h-10 text-muted-foreground rounded-full border border-muted-foreground">
                 <Icon className="w-10 h-5" />
@@ -101,24 +103,28 @@ export const WritingCard = ({
                         className="mt-2 text-xs sm:text-sm flex flex-col gap-2"
                     >
                         <span>{truncateString(summary)}</span>
-                        <span className="font-semibold flex flex-row gap-2">
-                            <Calendar className="w-4 h-4" />
-                            <span>{dateStarted} - {dateFinished === "" ? "Present" : dateFinished}</span>
-                        </span>
-                        <div className="flex flex-row gap-2">
-                            <Link href={link}>
-                                <Button className="flex flex-row gap-2">
-                                    <ExternalLink className="w-4 h-4" />
-                                    <span>Access the Full Paper</span>
-                                </Button>
-                            </Link>
-                            <Link href={`/writings/${getShortKey(title)}`}>
-                                <Button className="flex flex-row gap-2" variant={"ghost"}>
-                                    <Info className="w-4 h-4" />
-                                    <span>More Information</span>
-                                </Button>
-                            </Link>
-                        </div>
+                        {
+                            type !== "Idea" && <>
+                                <span className="font-semibold flex flex-row gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <span>{dateStarted} - {dateFinished === "" ? "Present" : dateFinished}</span>
+                                </span>
+                                <div className="flex flex-row gap-2">
+                                    <Link href={link}>
+                                        <Button className="flex flex-row gap-2">
+                                            <ExternalLink className="w-4 h-4" />
+                                            <span>Access the Full Paper</span>
+                                        </Button>
+                                    </Link>
+                                    <Link href={`/writings/${getShortKey(title)}`}>
+                                        <Button className="flex flex-row gap-2" variant={"ghost"}>
+                                            <Info className="w-4 h-4" />
+                                            <span>More Information</span>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </>
+                        }
 
                     </motion.div>
                 )}
