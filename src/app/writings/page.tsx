@@ -20,9 +20,9 @@ export default function PapersPage() {
   const [filter, setFilter] = useState("all");
   const writings = DATA.writings.filter((writing) => {
     if (filter === "all") {
-      return writing.type !== "Idea";
+      return writing.type !== "idea";
     }
-    return writing.category === filter && writing.type !== "Idea";
+    return writing.category === filter && writing.type !== "idea";
   });
 
   return (
@@ -60,7 +60,7 @@ export default function PapersPage() {
       }
 
       <section className="flex flex-col gap-4">
-        {writings
+        {writings.filter(w => w.type === "written")
           .sort((a, b) => new Date(b.dateStarted).getTime() - new Date(a.dateStarted).getTime())
           .map((writing, idx) => (
             <BlurFade key={writing.title} delay={BLUR_FADE_DELAY * 2 + idx * 0.05 + 0.3}>
@@ -87,7 +87,7 @@ export default function PapersPage() {
 
       <section className="filter grayscale !text-gray-500 flex flex-col gap-4">
         {[...DATA.writings]
-          .filter(writing => writing.type === "Idea")
+          .filter(writing => writing.type !== "written")
           .sort((a, b) => new Date(b.dateStarted).getTime() - new Date(a.dateStarted).getTime())
           .map((writing, idx) => (
             <BlurFade key={writing.title} delay={BLUR_FADE_DELAY * 2 + idx * 0.05 + 0.5}>

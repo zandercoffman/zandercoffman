@@ -65,7 +65,7 @@ export const WritingCard = ({
     };
 
     return (
-        <Card className={"flex items-center gap-4 group cursor-pointer " + (type == "Idea" ? "!text-gray-500" : "text-black")} onClick={() => setIsExpanded(!isExpanded)}>
+        <Card className={"flex items-center gap-4 group cursor-pointer " + (type !== "written" ? "!text-gray-500" : "dark:text-white text-black")} onClick={() => setIsExpanded(!isExpanded)}>
             {/* Icon */}
             <div className="flex items-center justify-center w-10 h-10 text-muted-foreground rounded-full border border-muted-foreground">
                 <Icon className="w-10 h-5" />
@@ -104,7 +104,7 @@ export const WritingCard = ({
                     >
                         <span>{truncateString(summary)}</span>
                         {
-                            type !== "Idea" && <>
+                            type !== "idea" && <>
                                 <span className="font-semibold flex flex-row gap-2">
                                     <Calendar className="w-4 h-4" />
                                     <span>{dateStarted} - {dateFinished === "" ? "Present" : dateFinished}</span>

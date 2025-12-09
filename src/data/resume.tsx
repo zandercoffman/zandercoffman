@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { BrainCircuit, Calendar, CaseSensitive, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
+import { BrainCircuit, BrainCircuitIcon, Calendar, CaseSensitive, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
 
 /**
  * Writing Template
@@ -72,7 +72,7 @@ export const DATA = {
       extendedSummary: "",
       dateStarted: "November 11th, 2025",
       dateFinished: "",
-      type: "written",
+      type: "idea",
       category: "Research Paper",
       wordCount: 1000,
       coverImage: "",
@@ -189,6 +189,21 @@ export const DATA = {
         "Conclusion": 9,
         "Works Cited": 10
       },
+    },
+    {
+      title: "Rebuild, Reinvent, Repeat: A Scientific Analysis of the Psychological Principles Behind @julienhimself’s Coaching",
+      summary: "This essay explores how @julienhimself guides his audience through a cycle of rebuilding, reinventing, and repeating personal transformation by blending mindset shifts, emotional processing, and confidence-building across all his content.",
+      extendedSummary: "",
+      dateStarted: "December 1st, 2025",
+      dateFinished: "",
+      category: "Psychological Analysis / Applied Psychology Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: BrainCircuitIcon,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "written"
     },
     {
       title: "Meta’s Smart Glasses: How a Simple Vision Turned Controversial",
