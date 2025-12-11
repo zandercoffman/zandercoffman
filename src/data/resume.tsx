@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { BrainCircuit, BrainCircuitIcon, Calendar, CaseSensitive, Coffee, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
+import { BrainCircuit, BrainCircuitIcon, Calendar, CaseSensitive, Coffee, Gamepad, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
 
 /**
  * Writing Template
@@ -29,38 +29,44 @@ export const DATA = {
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
   description:
-    "Aspiring software developer who turns ideas into working solutions and loves growing alongside a team. Faith-driven, always learning, and passionate about writing and sharing what I’ve been blessed to learn.",
+    "Aspiring developer turning ideas into real solutions, growing with my team, and sharing what I’ve been blessed to learn.",
   summary:
     "I’m Zander, a developer who loves learning, building, and using tech to help people. I’m all about growing my skills, tackling real problems, and sharing what I’ve been blessed to learn with others. Whether it’s design, code, or community work, my goal is simple: create things that make life easier, support others on their journey, and keep growing as a builder every day.",
   avatarUrl: "/me.png",
-  skills: [
-    "React",
-    "Next.js",
-    "TailwindCSS",
-    "CSS",
-    "HTML",
-    "Javascript",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Godot",
-    "Java",
-    "Web Development",
-    "AP Computer Science A",
-    "JSON",
-    "Cross-Functional Team Leadership",
-    "Agile Project Coordination",
-    "Strategic Problem Solving",
-    "Creative Process Optimization",
-    "Data-Driven Decision Making",
-    "Technical Mentorship",
-    "Innovation Facilitation",
-    "Client-Focused Communication",
-    "Product Lifecycle Oversight",
-    "Collaborative Brainstorming",
-    "Stakeholder Engagement",
-    "Adaptive Workflow Management"
-  ],  
+  skills: {
+    "Programming Languages & Tools": [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "CSS",
+      "HTML",
+      "Javascript",
+      "Typescript",
+      "Node.js",
+      "Python",
+      "Godot",
+      "Java",
+      "Web Development",
+      "VSCode",
+      "JSON",
+      "Firebase Studio",
+      "shad/cn"
+    ],
+    "Business & Soft Skills": [
+      "Cross-Functional Team Leadership",
+      "Agile Project Coordination",
+      "Strategic Problem Solving",
+      "Creative Process Optimization",
+      "Data-Driven Decision Making",
+      "Technical Mentorship",
+      "Innovation Facilitation",
+      "Client-Focused Communication",
+      "Product Lifecycle Oversight",
+      "Collaborative Brainstorming",
+      "Stakeholder Engagement",
+      "Adaptive Workflow Management"
+    ]
+  },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/writings", icon: PenLine, label: "Papers Written" }
@@ -126,7 +132,7 @@ export const DATA = {
             "The Problem": 11,
           }
         },
-        "Adapting To The 21st Century's Job Market": {
+        "Adapting To The 21st Century\'s Job Market": {
           page: 11,
           subsections: {
             "Introduction And Prediction": 11,
@@ -137,7 +143,7 @@ export const DATA = {
             "Analysis": 11
           }
         },
-        "Thriving In The 21st Century's Job Market": {
+        "Thriving In The 21st Century\'s Job Market": {
           page: 11,
           subsections: {
             "Introduction And Prediction": 11,
@@ -178,11 +184,11 @@ export const DATA = {
         "Sequence Of Steps": {
           page: 2,
           subsections: {
-            "'S' - Setting The Foundation": 2,
-            "'M' - Marketing": 3,
-            "'A' - Attracting Members": 5,
-            "'R' - Reaching Out and Retaining": 5,
-            "'T' - Taking the Club to the Next Level": 6
+            "\'S\' - Setting The Foundation": 2,
+            "\'M\' - Marketing": 3,
+            "\'A\' - Attracting Members": 5,
+            "\'R\' - Reaching Out and Retaining": 5,
+            "\'T\' - Taking the Club to the Next Level": 6
           }          
         },
         "Examples/Results": 7,
@@ -484,6 +490,32 @@ export const DATA = {
     },
 
   ],
+  awards: [
+    {
+      company: "Congressional App Challenge",
+      href: "https://www.congressionalappchallenge.us/",
+      badges: [],
+      location: "",
+      title: "2025 Congressional App Challenge Winner — AZ-04",
+      logoUrl: "/cac.png",
+      start: "January 2026",
+      end: "May 2026",
+      description:
+        "Won the 2025 AZ-04 Congressional App Challenge for AZ04 with the Equipment Checkout System — a fast, efficient tool built to cut a 30-minute classroom rental process down to seconds and help teachers manage equipment with ease.",
+    },
+    {
+      company: "Future Business Leaders Of America",
+      href: "https://www.fbla.org/",
+      badges: [],
+      location: "Hybrid",
+      title: "3x State Champion and National Qualifier — FBLA",
+      logoUrl: "/fbla.png",
+      start: "August 2023",
+      end: "May 2026",
+      description:
+        "Placed 1st in Mobile Development, earned top-3 finishes twice in Management Information Systems, became a national competitor, and won 1st place in Website Coding & Development.",
+    },
+  ],
   education: [
     {
       school: "Desert Vista High School",
@@ -494,6 +526,16 @@ export const DATA = {
       start: "2022",
       end: "2026",
       description: `Highlighted Classes Taken: AP Calculus AB, AP Calculus BC, AP English: Language and Composition, AP Computer Science A, AP Spanish: Language and Culture, College Composition (ENG101), Honors Biotechnology 2`
+    },
+    {
+      school: "Scottsdale Community College",
+      href: "https://www.scottsdalecc.edu",
+      degree: "Bachelor of Business Administration – Management",
+      location: "Scottsdale, AZ",
+      logoUrl: "/scc.png",
+      start: "2026",
+      end: "Not Started",
+      description: `Comprehensive program emphasizing leadership, strategic decision-making, and organizational management, with coursework in finance, marketing, operations, and business ethics. Prepared for managerial roles across diverse industries.`
     },
     {
       school: "Massachusetts Institute of Technology",
@@ -660,12 +702,28 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "",
-      dates: "",
-      description: "",
-      location: "",
-      image: "",
+      title: "Health Tracker",
+      dates: "2023",
+      description: "A simple web app built with HTML, CSS, and JavaScript that helps users track their daily calories and exercises. Log meals, monitor workouts, and stay on top of your health goals with an easy-to-use interface.",
+      location: "Desert Vista High School",
+      image: "/tuhsd.jpg",
       links: [],
+    },
+    {
+      title: "Planet Explorer",
+      dates: "2024",
+      description: "A 3D educational game built with Unity that lets players explore the planets in our solar system. Start on Neptune and travel inward, answering questions about each planet. Players calculate orbital speeds, periods, and forces using real physics equations, making learning interactive and hands-on.",
+      location: "Desert Vista High School",
+      image: "/tuhsd.jpg",
+      links: [],
+    },    
+    {
+      title: "Insurmnia [POLICY VOIDED]",
+      dates: "2024",
+      description: "Insurmnia [POLICY VOIDED] is a fast-paced jam game where you play an overworked employee thrown into chaos after a sudden call from your boss. Navigate the madness, outsmart the competition, and survive the night — all built for the Godot Wild Jam hackathon.",
+      location: "Godot Wild Jam",
+      image: "/gwj.png",
+      links: [{icon: <Gamepad/>, title: "Itch.io", href: "https://zandercoffman.itch.io/insurmnia-policy-voided"}],
     }
   ],
 } as const;
