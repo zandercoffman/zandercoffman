@@ -29,9 +29,9 @@ export const DATA = {
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
   description:
-    "Aspiring Software Developer with a heart for clean code, growth, and real-world impact. Faith-driven learner and aspiring builder. I love growing in wisdom, mastering new skills, and helping others.",
+    "Aspiring software developer who turns ideas into working solutions and loves growing alongside a team. Faith-driven, always learning, and passionate about writing and sharing what I’ve been blessed to learn.",
   summary:
-    "I'm Zander, a driven dev from Phoenix passionate about using code to solve problems and make people's lives better. I’m on a path toward Computer Science and exploring areas like web dev, backend systems, and AI. I’ve been growing fast — balancing self-study, certifications, and real-life project ideas. My dream? To build tools that are actually useful — and maybe launch my own projects someday. Until then, I’m all about learning the stack, getting experience, and growing one PR at a time.",
+    "I’m Zander, a developer who loves learning, building, and using tech to help people. I’m all about growing my skills, tackling real problems, and sharing what I’ve been blessed to learn with others. Whether it’s design, code, or community work, my goal is simple: create things that make life easier, support others on their journey, and keep growing as a builder every day.",
   avatarUrl: "/me.png",
   skills: [
     "React",
