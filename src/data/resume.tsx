@@ -198,7 +198,7 @@ export const DATA = {
       },
     },
     {
-      title: "Americans Kill Themselves Daily: A Solution For Bisphenols in Receipts",
+      title: "Americans Silently Kill Themselves Daily: A Solution For Bisphenols in Receipts",
       summary: "This essay explores the dangers of bisphenols in receipts and proposes a solution to reduce exposure. It highlights the health risks associated with bisphenols, particularly BPA and BPS, and suggests alternatives for safer receipt materials. The essay emphasizes the importance of awareness and action to protect public health from these harmful chemicals.",
       extendedSummary: "This essay explains how new or inexperienced club leaders can successfully recruit and retain members by using the five-step “SMART” process: Setting the Foundation, Marketing, Attracting Members, Reaching Out and Retaining, and Taking the Club to the Next Level. It argues that by following these structured steps—supported by research, real examples, and proven strategies—any student can build a thriving, long-lasting club. This essay is an essay I made for College Composition (ENG101) and earned a 98/105 (93%) for this writing.",
       dateStarted: "N/A",
