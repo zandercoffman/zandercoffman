@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { BrainCircuit, BrainCircuitIcon, Calendar, CaseSensitive, Coffee, Gamepad, HomeIcon, NotebookIcon, PenLine, UsersRound } from "lucide-react";
+import { BrainCircuit, BrainCircuitIcon, Calendar, CaseSensitive, Coffee, Cross, Gamepad, HomeIcon, NotebookIcon, PenLine, ReceiptText, Swords, UsersRound } from "lucide-react";
 
 /**
  * Writing Template
@@ -29,7 +29,7 @@ export const DATA = {
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
   description:
-    "Aspiring developer turning ideas into real solutions, growing with my team, and sharing what I’ve been blessed to learn.",
+    "Aspiring developer turning ideas into real solutions, growing with my team, and sharing what I’ve been blessed to learn. Follower of Jesus Christ.",
   summary:
     "I’m Zander, a developer who loves learning, building, and using tech to help people. I’m all about growing my skills, tackling real problems, and sharing what I’ve been blessed to learn with others. Whether it’s design, code, or community work, my goal is simple: create things that make life easier, support others on their journey, and keep growing as a builder every day.",
   avatarUrl: "/me.png",
@@ -69,7 +69,8 @@ export const DATA = {
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/writings", icon: PenLine, label: "Papers Written" }
+    { href: "/writings", icon: PenLine, label: "Papers Written" },
+    { href: "/faith", icon: Cross, label: "Faith" }
   ],
   writings: [
     {
@@ -197,6 +198,37 @@ export const DATA = {
       },
     },
     {
+      title: "Americans Kill Themselves Daily: A Solution For Bisphenols in Receipts",
+      summary: "This essay explores the dangers of bisphenols in receipts and proposes a solution to reduce exposure. It highlights the health risks associated with bisphenols, particularly BPA and BPS, and suggests alternatives for safer receipt materials. The essay emphasizes the importance of awareness and action to protect public health from these harmful chemicals.",
+      extendedSummary: "This essay explains how new or inexperienced club leaders can successfully recruit and retain members by using the five-step “SMART” process: Setting the Foundation, Marketing, Attracting Members, Reaching Out and Retaining, and Taking the Club to the Next Level. It argues that by following these structured steps—supported by research, real examples, and proven strategies—any student can build a thriving, long-lasting club. This essay is an essay I made for College Composition (ENG101) and earned a 98/105 (93%) for this writing.",
+      dateStarted: "N/A",
+      dateFinished: "N/A",
+      category: "Argumentative Paper",
+      wordCount: 2824,
+      type: "written",
+      coverImage: "/writing/membersclub.png",
+      link: "https://zenodo.org/records/17652670?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjM4YjgwZjMyLTUyODItNDVhNS05ODRiLTc3Yzc1MDY1OGMyYyIsImRhdGEiOnt9LCJyYW5kb20iOiIwZjhkNDJiNzYyZDdhMDYwN2JhOThmZjAyNWZkY2ZkZiJ9.cJ-rh_SeLbQYupLDjSpTUNUHDAWCtpeXgwGzzt2_Nj9oBUXRStgJBMZqi8E1pW74xnZaMYZkez5gX1qH2U0F3g",
+      Icon: ReceiptText,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: {
+        "Introduction/Overview": 1,
+        "Special Terms": 2,
+        "Sequence Of Steps": {
+          page: 2,
+          subsections: {
+            "\'S\' - Setting The Foundation": 2,
+            "\'M\' - Marketing": 3,
+            "\'A\' - Attracting Members": 5,
+            "\'R\' - Reaching Out and Retaining": 5,
+            "\'T\' - Taking the Club to the Next Level": 6
+          }          
+        },
+        "Examples/Results": 7,
+        "Conclusion": 9,
+        "Works Cited": 10
+      },
+    },
+    {
       title: "Rebuild, Reinvent, Repeat: A Scientific Analysis of the Psychological Principles Behind @julienhimself’s Coaching",
       summary: "This essay explores how @julienhimself guides his audience through a cycle of rebuilding, reinventing, and repeating personal transformation by blending mindset shifts, emotional processing, and confidence-building across all his content.",
       extendedSummary: "",
@@ -207,6 +239,36 @@ export const DATA = {
       coverImage: "",
       link: "",
       Icon: BrainCircuitIcon,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "idea"
+    },
+    {
+      title: "The Book Of Romans",
+      summary: "This paper provides an in-depth expository analysis of the Book of Romans, exploring its theological themes, historical context, and relevance for contemporary Christian faith and practice. ",
+      extendedSummary: "",
+      dateStarted: "December 1st, 2025",
+      dateFinished: "",
+      category: "Theological / Expository Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: Swords,
+      badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
+      tableOfContents: { },
+      type: "written"
+    },
+    {
+      title: "If Grace Is Not by Works, Why Are the Ones Who Endure to the End Saved?",
+      summary: "This paper explores the theological implications of grace in Romans, examining how the concept of salvation by grace alone relates to perseverance and the final judgment.",
+      extendedSummary: "",
+      dateStarted: "December 1st, 2025",
+      dateFinished: "",
+      category: "Theological / Expository Paper",
+      wordCount: 0,
+      coverImage: "",
+      link: "",
+      Icon: Swords,
       badges: ["Leadership", "Club Growth", "Recruitment", "Strategy"]      ,
       tableOfContents: { },
       type: "written"
@@ -619,7 +681,7 @@ export const DATA = {
         },
         {
           type: "GitHub",
-          href: "https://github.com/zandercoffman/flashcardit",
+          href: "https://github.com/zandercoffman/flashcardit2.0",
           icon: <Icons.github className="size-3" />,
         },
       ],
