@@ -29,42 +29,41 @@ export const DATA = {
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
   description:
-    "Aspiring developer turning ideas into real solutions, growing with my team, and sharing what I’ve been blessed to learn. Follower of Jesus Christ.",
+    "Software developer and CS student building practical products with React, Next.js, TypeScript, and Java.",
   summary:
-    "I’m Zander, a developer who loves learning, building, and using tech to help people. I’m all about growing my skills, tackling real problems, and sharing what I’ve been blessed to learn with others. Whether it’s design, code, or community work, my goal is simple: create things that make life easier, support others on their journey, and keep growing as a builder every day.",
+    "Developer based in Phoenix focused on shipping useful software for education and productivity. Experienced building web apps, mentoring students, and collaborating with school and community teams to deliver real-world solutions. I thrive in fast, iterative environments and care deeply about writing maintainable code, clear documentation, and user-centered experiences.",
   avatarUrl: "/me.png",
   skills: {
-    "Programming Languages & Tools": [
+    "Languages & Frameworks": [
+      "TypeScript",
+      "JavaScript",
+      "Java",
+      "Python",
       "React",
       "Next.js",
+      "Node.js",
+      "Firebase",
+      "REST APIs"
+    ],
+    "Frontend & UI": [
       "TailwindCSS",
+      "shadcn/ui",
+      "Framer Motion",
       "CSS",
       "HTML",
-      "Javascript",
-      "Typescript",
-      "Node.js",
-      "Python",
-      "Godot",
-      "Java",
-      "Web Development",
-      "VSCode",
-      "JSON",
-      "Firebase Studio",
-      "shad/cn"
+      "Responsive Design",
+      "UI/UX Prototyping"
     ],
-    "Business & Soft Skills": [
-      "Cross-Functional Team Leadership",
-      "Agile Project Coordination",
-      "Strategic Problem Solving",
-      "Creative Process Optimization",
-      "Data-Driven Decision Making",
-      "Technical Mentorship",
-      "Innovation Facilitation",
-      "Client-Focused Communication",
-      "Product Lifecycle Oversight",
-      "Collaborative Brainstorming",
-      "Stakeholder Engagement",
-      "Adaptive Workflow Management"
+    "Collaboration & Delivery": [
+      "Git & GitHub",
+      "Agile Collaboration",
+      "Technical Documentation",
+      "Mentoring & Tutoring",
+      "Public Speaking",
+      "Stakeholder Communication",
+      "Project Planning",
+      "Godot",
+      "Problem Solving"
     ]
   },
   navbar: [
@@ -448,7 +447,7 @@ export const DATA = {
         "Debugging and Pacing"
       ],          
       description:
-        "UIsy Design makes custom, intuitive, and fun user interfaces for businesses and anyone who needs a clean, polished look. On top of that, we offer a modular UI library so developers can build front-ends faster without sacrificing style. Basically, we want design to feel easy, enjoyable, and just work for everyone.",
+        "Founded and run a design and front-end studio delivering custom interfaces and reusable component systems. Partner with clients to translate business goals into polished, accessible user experiences and faster development workflows.",
     },
     {
       company: "Code Ninjas",
@@ -468,7 +467,7 @@ export const DATA = {
         "Classroom Management"
       ],
       description:
-        "As a Code Sensei at Code Ninjas, I teach and support students as they learn to code through hands-on, game-driven lessons. ",
+        "Teach students through hands-on coding projects and game-based curriculum, helping them build strong programming fundamentals. Guide debugging, problem-solving, and project completion while creating an engaging classroom environment.",
     },
     {
       company: "Desert Vista Computer Science Club",
@@ -488,7 +487,7 @@ export const DATA = {
         "Time Management"
       ],         
       description:
-        "Managed club communications, organized meeting agendas, and maintained detailed records of events and initiatives. Coordinated schedules, documented decisions, and ensured smooth collaboration between officers, members, and external partners. Assisted in planning activities, tracking action items, and supporting the club’s overall operations.",
+        "Manage club communications, meeting agendas, and operational documentation for officers and members. Coordinate event logistics, track action items, and support planning to keep initiatives organized and on schedule.",
     },
     {
       company: "Tempe Union High School District",
@@ -508,7 +507,7 @@ export const DATA = {
         "Version Control (Git)"
       ],       
       description:
-        "Developing a comprehensive camera inventory system to streamline asset management district-wide, improving efficiency and accountability. Additionally, contributing to the design and development of an innovative flashcard system aimed at enhancing student learning, with potential for district-wide adoption. Collaborating closely with staff and stakeholders to deliver impactful technology solutions that support educational goals.",
+        "Developing a district camera inventory platform to streamline equipment tracking and improve accountability. Also building a flashcard learning system with staff stakeholders to support classroom outcomes and scalable adoption.",
     },
 
 
