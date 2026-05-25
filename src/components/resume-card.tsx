@@ -56,12 +56,12 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer"
+      className="group block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex">
+      <Card className="flex rounded-2xl border border-white/20 bg-white/55 p-4 transition-all duration-400 hover:-translate-y-0.5 hover:border-primary/25 hover:shadow-[0_18px_48px_-30px_rgba(68,90,255,0.45)] dark:border-white/10 dark:bg-white/[0.03]">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="m-auto size-12 border border-white/25 bg-muted-background shadow-sm dark:border-white/15 dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -70,17 +70,17 @@ export const ResumeCard = ({
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
+        <div className="ml-4 flex flex-grow flex-col items-center">
+          <CardHeader className="w-full">
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center gap-2 justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center justify-center gap-2 text-xs font-semibold leading-none tracking-tight sm:text-sm">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="align-middle text-xs"
+                        className="align-middle rounded-full bg-primary/10 text-[10px] text-primary dark:bg-primary/15"
                         key={index}
                       >
                         {badge}
@@ -95,12 +95,12 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="text-right text-xs tabular-nums text-muted-foreground sm:text-sm">
                 {period}
               </div>
             </div>
             {subtitle && (
-              <div className="font-sans text-xs">
+              <div className="font-sans text-xs text-muted-foreground">
                 {subtitle} {isCert && `issued by ${isCert}`}
               </div>
             )}
@@ -117,27 +117,27 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm flex flex-col gap-3"
+              className="mt-2 flex flex-col gap-3 text-xs sm:text-sm"
             >
-              <span>{description}</span>
+              <span className="leading-relaxed text-muted-foreground">{description}</span>
 
 
 
               {skills.length > 0 && (
                 <>
-                  <div className="text-xs tabular-nums text-muted-foreground text-left">
+                  <div className="text-left text-xs tabular-nums text-muted-foreground">
                     Skills Learned
                   </div>
                   <div className="grid grid-cols-3 gap-2">
                     {skills.map((skill, index) => (
-                      <Badge key={index} variant={"outline"}>{skill}</Badge>
+                      <Badge key={index} variant={"outline"} className="justify-center rounded-full border-border/80 bg-white/65 dark:bg-white/[0.05]">{skill}</Badge>
                     ))}
                   </div>
                 </>
               )}
 
               {href && (
-                <Button asChild className="w-fit">
+                <Button asChild className="w-fit rounded-full bg-primary/90 text-xs hover:bg-primary">
                   <Link href={href}>
                     {href.includes("https")
                       ? href.substring(8)
