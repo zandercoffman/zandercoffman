@@ -272,7 +272,7 @@ export default function Page() {
               altText={certificate.school}
               title={certificate.school}
               subtitle={certificate.degree}
-              period={`Issued ${certificate.start}`}
+              period={`Issued in ${certificate.start}`}
               isCert={certificate.location}
             />
           </BlurFade>
