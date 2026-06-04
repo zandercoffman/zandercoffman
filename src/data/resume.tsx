@@ -29,42 +29,47 @@ export const DATA = {
   location: "Phoenix, AZ",
   locationLink: "https://www.google.com/maps/place/phoenix",
   description:
-    "Aspiring developer turning ideas into real solutions, growing with my team, and sharing what I’ve been blessed to learn. Follower of Jesus Christ.",
+    "Software engineering candidate building performant, user-focused web products with modern React, Next.js, and AI-assisted workflows.",
   summary:
-    "I’m Zander, a developer who loves learning, building, and using tech to help people. I’m all about growing my skills, tackling real problems, and sharing what I’ve been blessed to learn with others. Whether it’s design, code, or community work, my goal is simple: create things that make life easier, support others on their journey, and keep growing as a builder every day.",
+    "I solve problems by shipping practical software, learning quickly, and collaborating closely with teams. I enjoy turning ambiguous ideas into clear product experiences, improving reliability and usability through iteration, and communicating tradeoffs in a way both technical and non-technical partners can act on. I am actively seeking software engineering internships and junior developer roles where I can contribute immediately while continuing to grow as an engineer.",
   avatarUrl: "/me.png",
   skills: {
-    "Programming Languages & Tools": [
-      "React",
-      "Next.js",
-      "TailwindCSS",
-      "CSS",
-      "HTML",
-      "Javascript",
-      "Typescript",
-      "Node.js",
-      "Python",
-      "Godot",
-      "Java",
-      "Web Development",
-      "VSCode",
-      "JSON",
-      "Firebase Studio",
-      "shad/cn"
+    Frontend: [
+      { name: "React", level: "Advanced" },
+      { name: "Next.js", level: "Advanced" },
+      { name: "TypeScript", level: "Proficient" },
+      { name: "TailwindCSS", level: "Advanced" },
+      { name: "HTML", level: "Advanced" },
+      { name: "CSS", level: "Advanced" },
+      { name: "Framer Motion", level: "Proficient" }
     ],
-    "Business & Soft Skills": [
-      "Cross-Functional Team Leadership",
-      "Agile Project Coordination",
-      "Strategic Problem Solving",
-      "Creative Process Optimization",
-      "Data-Driven Decision Making",
-      "Technical Mentorship",
-      "Innovation Facilitation",
-      "Client-Focused Communication",
-      "Product Lifecycle Oversight",
-      "Collaborative Brainstorming",
-      "Stakeholder Engagement",
-      "Adaptive Workflow Management"
+    Backend: [
+      { name: "Node.js", level: "Proficient" },
+      { name: "Python", level: "Proficient" },
+      { name: "REST APIs", level: "Proficient" },
+      { name: "Authentication", level: "Familiar" }
+    ],
+    Databases: [
+      { name: "Firebase", level: "Proficient" },
+      { name: "Supabase", level: "Familiar" },
+      { name: "PostgreSQL", level: "Familiar" }
+    ],
+    Cloud: [
+      { name: "Vercel", level: "Advanced" },
+      { name: "Cloudflare", level: "Familiar" },
+      { name: "Google AI APIs", level: "Proficient" }
+    ],
+    Tools: [
+      { name: "Git & GitHub", level: "Advanced" },
+      { name: "VS Code", level: "Advanced" },
+      { name: "shadcn/ui", level: "Proficient" },
+      { name: "Figma", level: "Proficient" },
+      { name: "Jest", level: "Familiar" }
+    ],
+    Collaboration: [
+      { name: "Mentorship", level: "Proficient" },
+      { name: "Cross-functional Communication", level: "Advanced" },
+      { name: "Product Thinking", level: "Proficient" }
     ]
   },
   navbar: [
@@ -407,7 +412,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/zander-coffman-127319330",
+        url: "https://www.linkedin.com/in/zander-coffman-127319330",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -664,7 +669,12 @@ export const DATA = {
       dates: "Jul 2024 - Aug 2024",
       active: true,
       description:
-        "Flashcard/it is an AI-powered flashcard generator that transforms educational PDFs into interactive flashcards. By leveraging Gemini's capabilities, users can upload documents, and the app intelligently extracts key concepts to create structured flashcards, enhancing the learning experience.",
+        "AI-powered study platform that converts uploaded learning materials into structured flashcards in seconds.",
+      achievements: [
+        "Reduced manual study-prep time by auto-generating card decks from source content",
+        "Implemented clean card-review UX to improve focus and retention",
+        "Deployed production version with responsive design and fast loading"
+      ],
       technologies: [
         "Next.js",
         "TypeScript",
@@ -694,7 +704,12 @@ export const DATA = {
       dates: "Mar 2024 - Apr 2024",
       active: true,
       description:
-        "A web app that helps educators and learners design custom curricula with ease. Users can organize lessons, set learning goals, and export structured course plans, making it simple to create personalized learning paths.",
+        "Curriculum planning web app for educators and students to build structured lesson plans and learning paths.",
+      achievements: [
+        "Streamlined lesson planning workflow with reusable curriculum blocks",
+        "Added export-ready structures for faster content handoff",
+        "Improved usability for non-technical educators through simple navigation"
+      ],
       technologies: [
         "Next.js",
         "TypeScript",
@@ -718,7 +733,12 @@ export const DATA = {
       dates: "May 2024 - Present",
       active: true,
       description:
-        "An open-source web app designed to teach Java programming through structured lessons tailored for beginners, AP Computer Science A students, and advanced learners. JavaBrewed offers regular, AP, and honors-level courses, along with personalized progress tracking and recommendations.",
+        "Open-source Java learning platform with tracks for beginner, AP CSA, and advanced learners.",
+      achievements: [
+        "Organized multi-level course paths to support differentiated instruction",
+        "Built progress-aware user flows for more personalized learning",
+        "Published codebase openly to encourage community contributions"
+      ],
       technologies: [
         "Next.js",
         "TypeScript",
@@ -747,7 +767,12 @@ export const DATA = {
       dates: "August 2024 - June 2025",
       active: true,
       description:
-        "ReLive It is an immersive American History game that gamifies learning through quizzes, AI interactions, and a unique feature that lets players experience historical events in their actual time periods. The game encourages active engagement and deeper understanding of history by blending education with gameplay.",
+        "Interactive history-learning game combining quizzes, AI prompts, and experiential storytelling.",
+      achievements: [
+        "Designed gameplay loops that increased educational engagement",
+        "Integrated AI-assisted interactions to enrich historical context",
+        "Led multidisciplinary development across design and engineering tasks"
+      ],
       technologies: [
         "Godot",
         "TypeScript",
