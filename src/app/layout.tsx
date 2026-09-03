@@ -57,13 +57,19 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased overflow-x-hidden",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            {children}
+            <div className="pointer-events-none fixed inset-0 -z-10">
+              <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(6,8,20,0.24))] dark:bg-[linear-gradient(to_bottom,transparent,rgba(0,0,0,0.5))]" />
+              <div className="absolute left-1/2 top-0 h-[40rem] w-[40rem] -translate-x-1/2 rounded-full bg-indigo-500/15 blur-3xl dark:bg-indigo-500/10" />
+            </div>
+            <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-16 lg:px-10">
+              {children}
+            </div>
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
